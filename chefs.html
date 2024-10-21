@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chefs</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/chefs.css">
+  </head>
+
+  <body>
+
+
+    <!-- top -->
+    <section class="top">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-10 d-md-block d-none d-flex align-items-center">
+            <div class="icons">
+              <ul class="icons-list d-flex align-items-center list-unstyled">
+                <li><a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-12 d-flex align-items-center">
+            <div class="login text-center py-md-0 py-2 w-md-100 w-75 mx-md-0 mx-auto">
+              <span class="text-white login-welcome"><i class="fa-regular fa-user"></i> <a href="#" class="text-white "
+                  id="welcome-message"></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="landing">
+      <div class="overlay">
+        <!-- header -->
+        <header class="bg-light">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img class="py-2 py-md-0" src="img/logo-black.png" alt="logo"
+                  draggable="false" width="130"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white"></i></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav text-md-white text-dark">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Recipes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Recipe Types</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Beef</a></li>
+                          <li><a class="dropdown-item" href="#">Chicken</a></li>
+                          <li><a class="dropdown-item" href="#">Lamb</a></li>
+                          <li><a class="dropdown-item" href="#">Dessert</a></li>
+                          <li><a class="dropdown-item" href="#">Pasta</a></li>
+                          <li><a class="dropdown-item" href="#">Pork</a></li>
+                          <li><a class="dropdown-item" href="#">Seafood</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="chefs.html">Chefs</a>
+                  </li>
+                  <li class="nav-item dropdown page">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li class="dropdown-submenu">
+                        <a class="menu-item" href="creatrecipe.html">Create Recipe</a>
+                      </li>
+                      <li class="dropdown-submenu drop-sec">
+                        <a class="menu-item" href="My-recipe.html">My Rcipes</a>
+
+                      </li>
+                      <li class="dropdown-submenu drop-sec">
+                        <a class="menu-item" href="myfav.html">My Favorites</a>
+
+                      </li>
+
+                      <li>
+                        <a class="menu-item" href="signin.html">Login</a>
+
+                      </li>
+                      <li class="dropdown-submenu drop-sec">
+                        <a class="menu-item" href="signUp.html">Register</a>
+
+                      </li>
+                      <li class="dropdown-submenu drop-sec">
+                        <a class="menu-item" id="logout" href="signUp.html">Logout</a>
+
+                      </li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+
+        <div class="landing-content">
+          <h2 class="landing-title text-white">Chefs</h2>
+          <div class="landing-crumb">
+            <span class="home">Home</span>
+            <i>/</i>
+            <span class="page-sec">Chefs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- chefs -->
+    <section class="chefs">
+
+
+      <div class=" container">
+        <!-- <div class="heading m-3">
+          <span class="text-center d-flex justify-content-center align-items-lg-center m-2"> Get access to
+            thousands of recipes from famous chefs.</span>
+          <h3 class="text-center d-flex justify-content-center align-items-lg-center m-2"> Our Chefs & Writers
+          </h3>
+        </div>
+        <div class="sperate m-auto mb-5">
+        </div> -->
+
+        <!-- chefs-cards -->
+        <div class="chefs-cards">
+          <div class="row g-3 ">
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/chef-1-small.jpg" class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  1 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none"> Philip</a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>French Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope d-inline-block"></i>
+                  <a href="#" class=" d-inline-block">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 456 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/person-1.jpg" class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  1 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none"> Hanry</a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>American Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope"></i>
+                  <a href="#">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 4512 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer ">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/chef-2-small.jpg" class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  2 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none"> Mary</a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>Italian Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope"></i>
+                  <a href="#">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 4512 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer ">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/chef-1-small.jpg" class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  3 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none">Kevin </a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>American Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope"></i>
+                  <a href="#">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 4512 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer ">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/person-3.jpg " class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  3 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none">Andrew </a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>French Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope"></i>
+                  <a href="#">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 4512 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer ">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 p-0  Card-chef ">
+              <div class="card-img">
+                <img src="img/chef-3-small.jpg" class="card-img-top" alt="...">
+                <div class="hover-button">
+                  Recipes
+                </div>
+              </div>
+              <div class="recipe">
+                <span>
+                  <i class="fa fa-utensil-spoon"></i>
+                  2 Recipes
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group list-group-flush">
+                  <li class=" list-unstyled">
+                    <a href="#" target="_blank" class=" fs-5 text-decoration-none "> Michael</a>
+                  </li>
+                  <li class=" list-unstyled">
+                    <small>Mexican Chef</small>
+                  </li>
+                </ul>
+                <div class="card-contact">
+                  <i class="far fa-envelope"></i>
+                  <a href="#">info@example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fa fa-globe"></i>
+                  <a href="#">www.example.com</a>
+                </div>
+                <div class="card-contact">
+                  <i class="fas fa-phone"></i>
+                  <a href="#"><small>123 456 7890</small></a>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush Card-footer ">
+                <li class="list-group-item p-0">
+                  <a href="#" target="_blank" class="chef-social-network facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="chef-social-network linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end the container -->
+      </div>
+      <!--  chef-cards -->
+
+
+      </div>
+    </section>
+
+    <!-- end chefs -->
+
+
+    <!-- start footer  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-7 ">
+            <div class="foot-item">
+              <div class="foot-head1 ">
+                <h4 class="position-relative">About Us</h4>
+              </div>
+
+
+              <div class="foot-info">
+                <p>Browse our extensive collection of recipes that includes thousands of recipes for
+                  cookies, cakes, breads, rolls and main dishes.</p>
+                <ul class="list-unstyled">
+                  <li><span class="foot-about-ico"><i class="fa-solid fa-location-dot"></i></span>498
+                    Park Presidio Blvd, San Francisco</li>
+                  <li> <span class="foot-about-ico"></i> <i class="fa-regular fa-envelope"></i></span>
+                    info@example.com</li>
+                  <li><span class="foot-about-ico"><i class="fa-solid fa-headphones-simple"></i></span>
+                    +123
+                    456 679 123</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6  col-sm-12">
+            <div class="foot-item">
+              <div class="foot-head2 ">
+                <h4 class="position-relative">Quick Links</h4>
+              </div>
+
+
+              <div class="foot-info">
+                <ul class="list-unstyled">
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">About Us</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none"> Submit Your Recipe</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Privacy Policy</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Terms & Conditions</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Submit Your Recipes</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6  col-sm-12">
+            <div class="foot-item">
+              <div class="foot-head3 ">
+                <h4 class="position-relative">Courses</h4>
+              </div>
+
+
+              <div class="foot-info">
+                <ul class="list-unstyled">
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Appetizers</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none"> Breads & Rolls</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Condiments</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Desserts</a></li>
+                  <li> <span class="footer-icon"> <i class="fa-sharp fa-solid fa-greater-than"></i></span><a href=""
+                      class="text-decoration-none">Dinners</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6  col-sm-12">
+            <div class="foot-item">
+              <div class="foot-head4 position-relative">
+                <h4>Recent Recipes</h4>
+              </div>
+
+
+
+              <div class="foot-info ">
+
+                <div class="foot-info-img1 d-flex py-3 ">
+                  <div class="foot-img1">
+                    <img src="img/recipe-3-150x150.jpg" alt="pizza-3">
+                  </div>
+                  <div class="foot-img1-dec ps-3">
+                    <h5>Black Bean Sweet Potato Bowl</h5>
+                    <small><span class="pe-2"><i class="fa-regular fa-calendar"></i> April 10,
+                        2022</small>
+
+                  </div>
+                </div>
+                <div class="foot-info-img2 d-flex py-3b">
+                  <div class="foot-img2">
+                    <img src="img/recipe-2-150x150.jpg" alt="pizza-3">
+                  </div>
+                  <div class="foot-img2-dec ps-3">
+                    <h5>How to add fibre to...</h5>
+                    <small><span class="pe-2"><i class="fa-regular fa-calendar"></i></span> April
+                      10,
+                      2022</small>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-2  col-md-4  col-sm-12">
+            <div class="foot-item">
+              <div class="foot-head5 ">
+                <h4 class="position-relative">Social Links</h4>
+              </div>
+
+
+              <div class="foot-info">
+                <ul class="list-unstyled mb-2">
+                  <span><i class="fa-brands fa-twitter"></i></span>
+                  <span class="ms-2"><i class="fa-brands fa-square-facebook"></i></span>
+                  <span class="ms-2"><i class="fa-brands fa-youtube"></i></span>
+                  <span class="ms-2"><i class="fa-brands fa-linkedin"></i></span>
+
+                  <span class="ms-2"><i class="fa-brands fa-instagram"></i></span>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer  -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/exit.js"></script>
+    <script src="JS/chefs.js"></script>
+    <script src="JS/script.js"></script>
+
+  </body>
+
+</html>
